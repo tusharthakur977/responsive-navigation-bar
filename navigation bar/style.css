@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image:url("bg2.jpg") ;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    background-color: #1b1b1b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+}
+
+
+.brand h1{
+    margin: 0 30px;
+    color: #f2f2f2;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 20px;
+    justify-content: center;
+}
+
+.navbar  li{
+    padding: 10px;
+    list-style: none;
+    border-radius: 10px;
+}
+
+.navbar li a:hover{
+    background-color:#f2f2f2 ;
+    color: black;
+    border-radius: 10px;
+}
+.navbar li a{
+    color: #f2f2f2;
+    padding: 8px 12px;
+    font-size: 1.112em;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+.content{
+    display: flex;
+    height: 30%;
+    width: 55%;
+    font-size: 1.4em;
+    padding: 20px;
+    
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+ }
+@media (max-width: 776px )
+{
+    nav{
+        height: 120px;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .brand h1{
+        width: 100vw;
+        text-align: center;
+        margin: 10px 0 20px 0px;
+        color: #f2f2f2;
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+
+    .navbar{
+        margin: 0 0 20px 0;
+        }
+}
+
+
+@media screen and (max-width: 506px )
+{
+      nav{
+        height: 150px;
+        justify-content: center;
+     
+        }
+
+    .brand h1{
+        font-size: 33px;
+        }
+
+    .navbar{    
+        margin: 0 0 15px;        
+        justify-content: center;
+    }
+
+        .navbar li a{
+            color: #f2f2f2;
+            padding: 8px 12px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: .5s ease;
+        }
+}
